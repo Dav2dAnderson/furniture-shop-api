@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_cleanup.apps.CleanupConfig',
+
     'rest_framework',
     'drf_spectacular',
 
@@ -82,14 +83,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'furniture_shop',
-        'USER': 'shopadmin',
-        'PASSWORD': '$shop#admin',
-        'HOST': 'localhost',
-        'PORT': 5432,
-    }
+    'default': dj_database_url.config(default='postgres://furniture_admin:CMneTWIYPOhJDVFFPR8NDqK0FHsWdGm2@dpg-ctmjh1jtq21c73f97320-a:5432/furniture_shop_db')
 }
 
 
