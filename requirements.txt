@@ -16,3 +16,5 @@ sqlparse==0.5.2
 typing_extensions==4.12.2
 tzdata==2024.2
 ursina==7.0.0
+django-cleanup==5.0.0
+
